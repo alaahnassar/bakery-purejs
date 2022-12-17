@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/84e17ee5b7.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg col-md-12">
+                    <div class="navbar-brand">
+                        <a href="home.html">
+                            <img src="images/main-logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#slide-navbar-collapse" aria-controls="slide-navbar-collapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="slide-navbar-collapse">
+                        <ul class="navbar-nav list-inline text-uppercase">
+                            <li class="nav-item text-hover active"><a href="home.html" class="nav-link"
+                                    data-effect="Home">Home</a></li>
+                            <li class="nav-item text-hover"><a href="#" class="nav-link">About
+                                    us</a></li>
+                            <li class="nav-item text-hover"><a href="#" class="nav-link">Products</a></li>
+                            <li class="nav-item text-hover"><a href="#" class="nav-link">Contact
+                                    us</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="shopping-cart">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping "></i>
+                            <span id="count"></span>
+                        </a>
+                    </div>
+
+
+                </nav>
+
+            </div>
+        </div>
+
+    </nav>
+    <header>
+        <div class="mySlides main">
+            <img class="headerImg" src="./images/banner.jpg" style="width: 100%" />
+            <div class="headerText text-content col-md-6 bg-Peach p-5 mx-auto">
+                <h1>delicious cupcakes for you</h1>
+                <p>A gorgeous selection of our favorites for a client to send as a new year’s gift. A gorgeous selection
+                    of our favorites for a client to send as a new year’s gift.
+                    A gorgeous selection of our favorites for a client to send as a new year’s gift.A gorgeous selection
+                    of our favorites for a client to send as a new year’s gift.</p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <img class="headerImg" src="./images/banner1.jpg" style="width: 100%" />
+            <div class="headerText text-content col-md-6 bg-Peach p-5 mx-auto">
+                <h1>delicious cupcakes for you</h1>
+                <p>A gorgeous selection of our favorites for a client to send as a new year’s gift. A gorgeous selection
+                    of our favorites for a client to send as a new year’s gift.
+                    A gorgeous selection of our favorites for a client to send as a new year’s gift.A gorgeous selection
+                    of our favorites for a client to send as a new year’s gift.</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img class="headerImg" src="./images/banner2.jpg" style="width: 100%" />
+            <div class="headerText text-content col-md-6 bg-Peach p-5 mx-auto">
+                <h1>delicious cupcakes for you</h1>
+                <p>A gorgeous selection of our favorites for a client to send as a new year’s gift. A gorgeous selection
+                    of our favorites for a client to send as a new year’s gift.
+                    A gorgeous selection of our favorites for a client to send as a new year’s gift.A gorgeous selection
+                    of our favorites for a client to send as a new year’s gift.</p>
+            </div>
+        </div>
+
+        <div class="direction">
+            <a class="prev" onclick="showSlider('prev')">❮</a>
+            <a class="next" onclick="showSlider('next')">❯</a>
+        </div>
+    </header>
+    <!-- about us -->
+    <section class="about-us margin-medium">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h2 class="title text-center p-3 pb-5">About Us</h2>
+
+                    <div>
+                        <div class="col-md-12">
+                            <div class="row flex-wrap justify-content-between">
+
+                                <div class="col-md-6 rounded">
+                                    <div class="product-image">
+                                        <img src="./images/tabimg.jpg" alt="" width="100%">
+                                    </div>
+                                </div>
+
+                                <div class="text-content col-md-6 bg-Peach p-5 rounded">
+                                    <h3 class="mb-4">
+                                        This products for all be happy and peace
+                                    </h3>
+                                    <p>A gorgeous selection of our favorites for a client to send as a new year’s gift.
+                                        A gorgeous selection of our favorites for a client to send as a new year’s gift.
+                                        A gorgeous selection of our favorites for a client to send as a new year’s gift.
+                                        A gorgeous selection of our favorites for a client to send as a new year’s gift.
+
+                                    </p>
+                                    <div class=" mt-4">
+                                        <button href="#" class="btn btn-accent">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+    </section>
+    <!-- filter -->
+    <section class="filter">
+        <div class="container">
+            <div>
+                <h2 class="title text-center p-3 pb-5">Our Products</h2>
+                <nav id="myBtnContainer" class="nav nav-pills  flex-column flex-sm-row">
+                    <button onclick="filterSelection('all')"
+                        class="btnFilter  text-sm-center bg-accent nav-link active">All</button>
+                    <button onclick="filterSelection('cake')"
+                        class="btnFilter text-sm-center bg-grey text-primary nav-link">Pastry</button>
+                    <button onclick="filterSelection('donats')"
+                        class="btnFilter text-sm-center bg-grey text-primary nav-link">Donats</button>
+                    <button onclick="filterSelection('cupCakes')"
+                        class="btnFilter text-sm-center bg-grey text-primary nav-link">cupCake</button>
+                    <button onclick="filterSelection('Macarons')"
+                        class="btnFilter text-sm-center bg-grey text-primary nav-link">Macarons</button>
+
+
+                </nav>
+
+
+                <div class="d-flex flex-wrap col-md-12  py-5 ">
+                    <div class="filterDiv col-md-3  cake  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/cake-item1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Black forest patry</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">Cake</p>
+                                <h6 class="price text-accent ">10$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+
+                    <div class="filterDiv col-md-3  donats  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/cake-item2.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sparkel Dontus</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">Dontus</p>
+                                <h6 class="price text-accent ">10$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  cupCakes  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/cake-item3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Black forest cupCake</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">cupCake</p>
+                                <h6 class="price text-accent ">10$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  Macarons  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/cake-item4.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Macarons with Berries</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">Macarons</p>
+                                <h6 class="price text-accent ">15$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  donats  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/macarons.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Checlot Dontus</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">Dontus</p>
+                                <h6 class="price text-accent ">15$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  cupCakes  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/cupcake2.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Black forest cupCake</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">cupCake</p>
+                                <h6 class="price text-accent ">10$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  donats  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/donut1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Checlot Dontus</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">Dontus</p>
+                                <h6 class="price text-accent ">15$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  cupCakes  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/cupcake1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Black forest cupCake</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">cupCake</p>
+                                <h6 class="price text-accent ">10$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  donats  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/macarons.jpg" class="card-img-top" height="325px" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Checlot Dontus</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">Dontus</p>
+                                <h6 class="price text-accent ">15$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  cake  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/postImg1.jpg" class="card-img-top" height="auto" width="100%" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Black forest patry</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">Cake</p>
+                                <h6 class="price text-accent ">28$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+                    <div class="filterDiv col-md-3  cake  card px-0 mb-5 mx-3" style="width: 19em;">
+                        <div class="cardImg">
+                            <img src="./images/postImg2.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Black forest patry</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="">Cake</p>
+                                <h6 class="price text-accent ">28$</h6>
+                            </div>
+
+                            <button href="#" class="add btn btn-accent">Add to Card</button>
+
+                        </div>
+                    </div>
+
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -- footer-- -->
+    <footer id="footer " class="footer bg-Peach mb-0">
+        <div class="container py-5">
+            <div class="row">
+                <div class="d-flex flex-wrap justify-content-between">
+
+                    <div class="col-md-3 footer-logo text-center mb-3">
+                        <img src="images/main-logo.png" class="mb-3">
+                        <p>Bakery is a free HTML CSS Template by Templates Jungle specially crafted for Bakeries.</p>
+                    </div>
+
+                    <div class="col-md-6 mx-auto mb-3">
+
+                        <div class="working-schedule ">
+                            <h4 class="widget-title text-accent text-center">Our Work Time</h4>
+                            <div class="time-list d-flex flex-wrap justify-content-center">
+                                <ul class="list-unstyled pr-5">
+                                    <li>Monday - Friday</li>
+                                    <li>8:00am - 8:30 pm</li>
+                                </ul>
+                                <ul class="list-unstyled pl-5">
+                                    <li>Saturday - Sunday</li>
+                                    <li>10:00am - 16:00 pm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--col-md-4-->
+
+                    <div class="col-md-3">
+                        <div class="quick-links">
+                            <h4 class="widget-title text-accent">Quick Links</h4>
+                            <div class="footer-menu">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Card</a></li>
+
+                                    <li><a href="contact.html">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="float-end">
+                            <button onclick="scrollToTop()" class="top">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </button>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div><!--flex-container-->
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/demo.js"></script>
+</body>
+
+</html>
