@@ -271,6 +271,47 @@ img {
     font-size: 19px;
   }
 
+  /* ------ about us page ------------ */
+  .our-targets{
+    background-color: #fbfbfb;
+  }
+  .our-targets h2{
+    color: #111;
+    font-weight: 700;
+  }
+  .our-targets .accordion-item{
+    background-color: transparent;
+    padding: 30px 0;
+    margin: 20px 0;
+  }
+  .our-targets .accordion-item h4{
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  .our-targets .accordion-item h4 a{
+    color: #111 !important;
+  }
+  .our-targets .accordion-item h4 a:hover{
+    color: #ce3c83 !important;
+    transition: all 0.3s ease;
+  }
+  /* ------ contact us page ------------ */
+  .contact-information{
+    background-color: #fbfbfb;
+  }
+  .contact-information span{
+    display: none;
+    font-size: 13px;
+    color: red;
+    padding: 0 12px;
+  }
+  .contact-information textarea 
+  {
+    border-radius: .375rem;
+    border: 1px solid #ced4da;
+    padding: 5px 10px;
+  }
+
 
 
 

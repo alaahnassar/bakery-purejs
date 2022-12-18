@@ -11,8 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/84e17ee5b7.js" crossorigin="anonymous"></script>
-
-
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -35,12 +33,12 @@
 
                     <div class="navbar-collapse collapse" id="slide-navbar-collapse">
                         <ul class="navbar-nav list-inline text-uppercase">
-                            <li class="nav-item text-hover"><a href="home.html" class="nav-link"
+                            <li class="nav-item text-hover"><a href="index.html" class="nav-link"
                                     data-effect="Home">Home</a></li>
-                            <li class="nav-item text-hover"><a href="#" class="nav-link">About
+                            <li class="nav-item text-hover"><a href="about.html" class="nav-link">About
                                     us</a></li>
-                            <li class="nav-item text-hover"><a href="#" class="nav-link">Products</a></li>
-                            <li class="nav-item text-hover"><a href="#" class="nav-link">Contact
+                            <li class="nav-item text-hover"><a href="product" class="nav-link">Products</a></li>
+                            <li class="nav-item text-hover"><a href="contact-us.html" class="nav-link">Contact
                                     us</a></li>
                         </ul>
                     </div>
@@ -143,15 +141,14 @@
 
     </section>
     <!-- filter -->
-    <section class="filter">
+    <section class="filter" id="#product">
         <div class="container">
             <div>
                 <h2 class="title text-center p-3 pb-5">Our Products</h2>
                 <nav id="myBtnContainer" class="nav nav-pills  flex-column flex-sm-row">
                     <button onclick="filterSelection('all')"
                         class="btnFilter text-sm-center  nav-link active">All</button>
-                    <button onclick="filterSelection('cake')"
-                        class="btnFilter text-sm-center  nav-link">Pastry</button>
+                    <button onclick="filterSelection('cake')" class="btnFilter text-sm-center  nav-link">Pastry</button>
                     <button onclick="filterSelection('donats')"
                         class="btnFilter text-sm-center  nav-link">Donats</button>
                     <button onclick="filterSelection('cupCakes')"
@@ -161,8 +158,6 @@
 
 
                 </nav>
-
-
                 <div class="d-flex flex-wrap col-md-12  py-5 ">
                     <div class="filterDiv col-md-3  cake  card px-0 mb-5 mx-3" style="width: 19em;">
                         <div class="cardImg">
