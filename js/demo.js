@@ -89,6 +89,19 @@ for (var i = 0; i < btnFilter.length; i++) {
 }
 
 //--------------scroll-------------------------
+
+// scrollToTop
+let scroll = document.getElementById("scroll");
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 500) {
+        scroll.style.display = "block";
+    } else if ((document.documentElement.clientHeight + window.scrollY) >= document.documentElement.scrollHeight) {
+        scroll.style.display = "block";
+    } else {
+        scroll.style.display = "none";
+    }
+};
+
 function scrollToTop() {
     window.scrollTo(0, 0);
 }

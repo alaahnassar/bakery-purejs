@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav id="nav">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg col-md-12">
+  
+                <nav id="nav" class="navbar navbar-expand-lg col-md-12">
                     <div class="navbar-brand">
                         <a href="home.html">
                             <img src="images/main-logo.png" alt="logo">
@@ -44,11 +42,8 @@
                             <!-- <span id="count"></span> -->
                         </a>
                     </div>
-                </nav>
-            </div>
-        </div>
     </nav> 
-    <section class="contact-information padding-large mt-3 p-5">
+    <section class="contact-information padding-large p-5">
         <div class="container">
             <div class="row">
                  <div class="col-md-6 p-0 mx-auto">
@@ -86,7 +81,7 @@
                                   </div>
                                 <div class="form-group row py-2">
                                   <div class="col-sm-12 text-right">
-                                    <button type="submit" id="submit1" class="btn btn-accent float-end p">Send</button>
+                                    <button type="submit" id="submit" onclick="validation(event)" class="btn btn-accent float-end p">Send</button>
                                     
                                   </div>
                                 </div>
@@ -101,7 +96,9 @@
     </section>
     
     <!-- <section class="google-map">
+        <div class="container py-5">
         <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://getasearch.com/fmovies"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+    </div>
     </section> -->
 
 
@@ -145,16 +142,17 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="float-end">
-                            <button onclick="scrollToTop()" class="top">
-                                <i class="fa-solid fa-arrow-up"></i>
-                            </button>
-                        </div>
+                      
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="float-end" id="scroll">
+        <button onclick="scrollToTop()" class="top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
 
 
         <!-- JavaScript Bundle with Popper -->
