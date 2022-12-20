@@ -43,31 +43,23 @@ function showSlider(direction) {
 var all = document.querySelectorAll(".filterDiv");
 var arr = [];
 all.forEach((item) => { arr.push(item); });
-var result;
 function filterSelection(product) {
-    result = arr.filter((item) => {
-        if (product == "all") {
-            item.style.display = "block";
-        } else if (product == "filterDiv") {
-
+     arr.filter((item) => {
+        if (product == "filterDiv") {
             item.style.display = "none";
             if (item.classList.contains("filterDiv")) {
                 item.style.display = "block";
             }
         } else if (product == "cake") {
-
-
             item.style.display = "none";
             if (item.classList.contains("cake")) {
                 item.style.display = "block";
-
             }
         }
         else if (product == "donats") {
             item.style.display = "none";
             if (item.classList.contains("donats")) {
                 item.style.display = "block";
-
             }
         }
         else if (product == "cupCakes") {
